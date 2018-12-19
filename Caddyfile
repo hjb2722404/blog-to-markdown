@@ -1,0 +1,14 @@
+localhost:8099
+gzip
+log ./backend/httplogs/access.log
+fastcgi /backend 127.0.0.1:9000 php {
+    ext   .php
+    split .php
+    index index.php
+}
+errors ./backend/httplogs/errors.log {
+    404 ./404.html
+    500 ./500.html
+}
+expvar /debug/vars
+ext .html .htm .php
