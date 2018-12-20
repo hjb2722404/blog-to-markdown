@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网易博客转markdown</title>
+    <link href="./public/layui/css/layui.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/style/index.css">
+</head>
+<body>
+    <div class="layui-fluid">
+        <div class="layui-row">
+            <div class="layui-col-md12 banner layui-bg-orange">
+                <h1>欢迎使用网易博客转Markdown功能</h1>
+                <h2>请跟随下面操作指引进行</h2>
+            </div>
+        </div>
+        <div class="layui-row">
+            <div class="layui-col-md12">
+                    <div class="layui-tab">
+                            <ul class="layui-tab-title">
+                              <li class="layui-this">1.下载xml文件</li>
+                              <li>2.上传xml文件</li>
+                              <li>3.打包下载</li>
+                            </ul>
+                            <div class="layui-tab-content">
+                              <div class="layui-tab-item layui-show first-step">
+                                  <ol start="1">
+                                      <li>登录到网易博客：<a href="http://reg.163.com/" target="_blank">点此登录</a></li>
+                                      <li>进入博客导出页面：<a target="_blank" href="http://blog.163.com/regulator/frontend/src/html/index.html#btn-move">点此进入</a></li>
+                                      <li>导出博客文章到xml并下载到本地</li>  
+                                    </ol>
+                              </div>
+                              <div class="layui-tab-item">
+                                    <button type="button" class="layui-btn" id="test1">
+                                            <i class="layui-icon">&#xe67c;</i>上传文件
+                                    </button>
+                              </div>
+                              <div class="layui-tab-item">
+                                    <button type="button" class="layui-btn" id="test2">
+                                            <i class="layui-icon">&#xe601;</i>打包下载
+                                    </button>
+                              </div>
+                            </div>
+                          </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./public/layui/layui.all.js" ></script>
+ <script>
+     ;!function(){
+        var element = layui.element;
+        var upload = layui.upload;
+   
+  //执行实例
+        var uploadInst = upload.render({
+        elem: '#test1' //绑定元素
+        ,url: '/upload/' //上传接口
+        ,done: function(res){
+            //上传完毕回调
+        }
+        ,error: function(){
+            //请求异常回调
+        }
+        });
+     }
+ </script>   
+</body>
+</html>

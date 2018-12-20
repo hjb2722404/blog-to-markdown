@@ -5,27 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>博客转Markdown</title>
-    <link href="./layui/css/layui.css" rel="stylesheet">
+    <link href="./public/layui/css/layui.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/style/index.css">
 </head>
 <body>
    
     <div class="layui-fluid">
 
         <div class="layui-row">
-            <div class="layui-col-md12">
-                欢迎使用博客文章转Markdown功能，请在下面选择需要转换的博客类型
+            <div class="layui-col-md12 layui-bg-orange banner">
+                <h1>欢迎使用博客文章转Markdown功能</h1>
+                <h2>请在下面选择需要转换的博客类型</h2>
             </div>
 
         </div>
         <div class="layui-row layui-col-space5">
-            <div class="layui-col-md2">网易</div>
-            <div class="layui-col-md2">CSDN</div>
-            <div class="layui-col-md2">博客园</div>
-            <div class="layui-col-md2">简书</div>
-            <div class="layui-col-md2">新浪</div>
-            <div class="layui-col-md2">QQ空间</div>
+            <div class="layui-col-md4 link layui-bg-cyan">
+                <a href="wangyi.html"><h3>网易</h3></a>
+            </div>
+            <div class="layui-col-md4 link layui-bg-cyan">
+                <a href="csdn.html"><h3>CSDN</h3></a>
+            </div>
+            <div class="layui-col-md4 link layui-bg-cyan">
+                <a href="bokeyuan.html"><h3>博客园</h3></a>
+            </div>
+            <div class="layui-col-md4 link layui-bg-cyan">
+                <a href="jianshu.html"><h3>简书</h3></a>
+            </div>
+            <div class="layui-col-md4 link layui-bg-cyan">
+                <a href="xinlang.html"><h3>新浪</h3></a>
+            </div>
+            <div class="layui-col-md4 link layui-bg-cyan">
+                <a href="qzone.html"><h3>QQ空间</h3></a>
+            </div>
         </div>
-        <div class="layui-row"></div>
+        <div class="layui-row">
+            <div class="layui-col-md12 footer">
+                <h4>
+                    版权所有：国王说
+                </h4>
+            </div>
+        </div>
 
 
 
@@ -33,7 +53,7 @@
 
 
 
- <script src="./layui/layui.all.js" ></script>
+ <script src="./public/layui/layui.all.js" ></script>
  <script>
      ;!function(){
          var layer = layui.layer,form = layui.form;

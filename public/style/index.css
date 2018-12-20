@@ -1,0 +1,26 @@
+.banner {
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.link {
+    text-align: center;
+    border: 1px solid #ffffff;
+}
+
+.link a {
+    width: 100%;
+    color:#ffffff;
+    vertical-align: middle;
+    line-height: 150px;
+}
+
+.footer {
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
